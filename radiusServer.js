@@ -8,6 +8,7 @@ server.on('message', function(msg, rinfo) {
 	
 	var myPacket = radius.decode(buffer);
 	console.log(myPacket);
+        console.log("Password is: " + myPacket.getPassword('secret'));
 
 });
 
